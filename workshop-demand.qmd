@@ -1,0 +1,54 @@
+---
+title: "**Workshop: Meeting your military work demands**"
+subtitle: Military Pentathlon Jørstadmoen 2025
+format: clean-revealjs
+logo: images/double-logo.png
+title-slide-attributes: 
+  data-background-image: ""
+author:
+  - name: Sjur Fortun Øfsteng | PhD
+    orcid: 0000-0000-0000-0000
+    email: Norwegian Defence Cyber Academy
+    affiliations: sofsteng@mil.no
+date: September 23, 2025
+#standalone: true
+self-contained: true
+#bibliography: bib/bib-lecture.bib
+execute: 
+  echo: false
+  warning: false
+  message: false
+editor_options: 
+  
+  chunk_output_type: console
+---
+
+
+
+```{r lib}
+source("./R/libraries.R")
+source("./R/themes.R")
+
+```
+
+
+## Outline of talk {.smaller background-color="#107895"}
+
+- Workshop
+
+- Working with the training plan?
+
+- 1 hour group work
+
+- 1 hour presentation
+
+
+
+## Ideas to work on {.smaller background-color="#107895"}
+
+- work demand - dig, crawl ect. and do we have valid tests which is associated with this working demand?  
+
+- capacity analysis (are you on point?)  
+- General demand  
+
+- challenges of systematic training over time in a military context?
