@@ -1,8 +1,9 @@
 ---
-title: "*Workshop. Mission-Ready: Physical Fitness, Operational Demands & the Military Pentathlon*"
-subtitle: Military Pentathlon Jørstadmoen 2025
+title: "*Mission-Ready: Physical Fitness, Operational Demands & the Military Pentathlon*"
+subtitle: Workshop | Military Pentathlon Jørstadmoen 2025
 format: clean-revealjs
 logo: images/double-logo.png
+footer: "Mission-Ready"
 title-slide-attributes: 
   data-background-image: ""
 author:
@@ -23,97 +24,156 @@ editor_options:
   chunk_output_type: console
 ---
 
-
-
 ```{r lib}
 source("./R/libraries.R")
 source("./R/themes.R")
 
 ```
 
-
 ## Outline of todays workshop {.smaller background-color="#604461"}
 
-- What is this workshop about - working with the theory
+-   What is this workshop about - working with the theory
 
 what - how - why?
 
-- Brief recap from the lecture
+-   Brief recap from the lecture
+    - Mine forelesninger
+    - Knut Sindre forelesning
 
-- Your working demand.
+-   Your working demand.
 
-- Longer assignment..
-
-- Workshop: 
-
-    - what to do? 
-    
-    
- 
-    
-    
-## Work shop tips: {.smaller background-color="#604461"}
-
-- Start strong, end stronger
-
-- End stronger: agenda - point at what we have learned, create highlight --> ask people what they have learned to get an summary
-- How did you feel to day: look at the progression, make people see the progression
+-   Longer assignment..
 
 
-- REDUCE the fade out of workshops.
-- Be confident - only one way of doing this workshop
-- Parking lot - save issues so they feel head and makes them more relaxed.
-    
-    
 
-- Working with the training plan?
+- Intro til leksjonene - min kadettene på at leksjonene vil lede til workshop hvor man vil jobbe med refleksjoner/diskusjoner
 
-- 1 hour group work
+    -   what to do?
 
-- 1 hour presentation
+## Workshop tips: {.smaller background-color="#604461"}
+
+-   Start strong, end stronger
+
+-   End stronger: agenda - point at what we have learned, create highlight --\> ask people what they have learned to get an summary
+
+-   How did you feel to day: look at the progression, make people see the progression
+
+-   REDUCE the fade out of workshops.
+
+-   Be confident - only one way of doing this workshop
+
+-   Parking lot - save issues so they feel heard and makes them more relaxed during the work session
+
+
 
 
 ## Meeting your military work demands {.smaller background-color="#604461"}
 
-- What, how, why
+### Aquired knowledge following the workshop
 
+**What** are your working demands in your position?
 
-::: {.notes}
+**How** will you achieve these working demands?
 
-- *What* are the working demand related to strength, endurance, technical, coordination, power.
-    
-    - Can you justify that - what are you doing? If not think of which speciality / fields may you have in the future?
+**Why** is this of importance?
 
+::: notes
+-   *What* are the working demand related to strength, endurance, technical, coordination, power.
 
-- *How* will you achieve these working demands?
+    -   Can you justify that - what are you doing? If not think of which speciality / fields may you have in the future?
 
-    - Put up a training plan adjusted for these goals, work with cadets from your nation
-    
-    
-- *Why* is this of importance?
+-   *How* will you achieve these working demands?
 
+    -   Put up a training plan adjusted for these goals, work with cadets from your nation
 
+-   *Why* is this of importance?
 :::
 
-
 # Brief introduction to the workshop {background-color="#604461"}
-
-
 
 ## The complex soldier {.smaller background-color="#604461"}
 
 ### Physical Performance Continuum
 
+![](images/deploy.png)
 
-![](images/performance-cont.png)
+[Figure inspired from: @billing_2017; @drain_2019]
 
-[Figure from: @billing_2017; @drain_2019]
+::: notes
+
+- Physical training, PES and MSKI prevention strategies are co-dependent factors, and central to organisational capability within physically demanding occupations.
+
+- You are able to meet the occumpational demands, which demands a level of physical fitness. This is of importance to prevent MSI..
+  - Focus on developing occupationlly-relevant physical capacitites to improve occupational performance, and reduce MSKI risk, rather than focus on task performance (e.g. load carriage).
+  
+- Consider implementing physical employment standard as maximal performance tests, rather than dichotomous pass/fail tests, to better understand the relationship between occupationally-relevant physical capacity and MSKI risk. 
+
+-   Development of coherent, well characterized physical training continuum, inclusive of both physical training and psychological is critical to the optimal development and maintenance of workforce performance capacity.
+:::
 
 
+
+## Changes following field exercises/ranger training, operations/deployment {background-color="#604461" footer="false"}
+
+::: {.r-stack}
+
+
+
+```{r}
+#| fig-height: 6.5
+#| fig-width: 8.
+#| fig-align: "center"
+
+
+tab <- readxl::read_excel("./data/ojanen_table.xlsx") |> 
+  pivot_longer(cols = c(power:bm),
+               names_to = "fac",
+               values_to = "val") |> 
+  mutate(fac_ra = factor(fac, levels = c("bm", "fat", "ffm", "aerobic", "power", "strength"),
+                         labels = c("Body mass", "Fat mass", "Fat free mass", "Aerobic", "Power", "Strength"))) |> 
+  
+  ggplot2::ggplot(aes(val, study), group=country, color=country) + geom_point() + facet_wrap(.~fac_ra) +
+  labs(x="%-change", y="Study") +
+  geom_vline(xintercept=0, linetype="dashed", alpha=0.4, color="black") +
+  
+  theme_classic() +
+  theme(strip.background = element_blank(),
+        strip.text = element_text(face = "bold"))
+  
+tab
+
+```
+
+
+::: {.fragment}
+
+```{r}
+#| fig-height: 6.5
+#| fig-width: 8.
+#| fig-align: "center"
+
+
+tab +
+  
+    annotate("rect", xmin = -0.4, xmax = -20.8, ymin = 0.5, ymax =21,  alpha = .1)
+  
+
+
+```
+
+:::
+
+:::
+
+
+
+[Figure created with data from Ojanen 2022<br>Doctoral Thesis]{.absolute left=-100 bottom=0 style="font-size:40%;"}
 
 ::: {.notes}
 
-- Development of coherent, well characterized physical training continuum, inclusive of both physical training and psychological is critical to the optimal development and maintenance of workforce performance capacity.
+- Post deploymet is something we have good evidence for. There will be a drop in physical fitness and performance following deployment studies. How large depends on stressfactors and duration of operations...
+
+- Explain figure.. 
 
 
 :::
@@ -124,135 +184,161 @@ what - how - why?
 
 ## The complex soldier {.smaller background-color="#604461"}
 
+-   Occupational task requirements
 
-- Occupational task requirements
-
-- Requirements are many for the modern soldier
-
+-   Requirements are many for the modern soldier
 
 ![](images/kyro2018-readi.png)
 
+::: notes
+-   The modern battlefield sets high demands and challenges to soldiers' physical and psycological domains. Even though the development of technology har relieved some of the physical and psychological burden on the battlefield, the overall load placed on soldiers has increased and the time for recovery has decreased.
 
-::: {.notes}
+-   All the stressors, point, have negative effects on soldiers performance in the battlefield. As a consequence of all these stressors, it is essential for soldiers to have adequate physical and psychological status to manage all the occupational tasks they have to perform.
 
-- The modern battlefield sets high demands and challenges to soldiers' physical and psycological domains. Even though the development of technology har relieved some of the physical and psychological burden on the battlefield, the overall load placed on soldiers has increased and the time for recovery has decreased.  
+-   Need for high physical, psycological and cognitive readiness to be successful in their everyday occupational tasks
 
-- All the stressors, point, have negative effects on soldiers performance in the battlefield. As a consequence of all these stressors, it is essential for soldiers to have adequate physical and psychological status to manage all the occupational tasks they have to perform.
+-   Soldiers need to be in good physical and psycological shape to make decisions quickly and responsible, even when they are in sleep deprivation, energy deficit of physically fatigued. Good physical performance is connected to resilience, as well as psychological and cognitive performance
+
+-   Studies have shown that good physical performance is connected to resilience, as well as psychological and cognitive performance.
+
+-   So, when designing physical training programs for soldiers, it is important to find an optimal balance between physical training and military specific training to avoid overreaching and training interference.
+
+-   A sufficient physical performance level helps the soldier to recover faster and to be more prepared for different tasks.
+
+- ALL THIS SHOULD be carefully considered when trying to plan and implement optimal physical training programs for soldiers.
 
 
-- Need for high physical, psycological and cognitive readiness to be successful in their everyday occupational tasks
-
-- Soldiers need to be in good physical and psycological shape to make decisions quickly and responsible, even when they are in sleep deprivation, energy deficit of physically fatigued. 
-Good physical performance is connected to resilience, as well as psychological and cognitive performance
-
-- Studies have shown that good physical performance is connected to resilience, as well as psychological and cognitive performance.
-
-- So, when designing physical training programs for soldiers, it is important to find an optimal balance between physical training and military specific training to avoid overreaching and training interference.
-
-- A sufficient physical performance level helps the soldier to recover faster and to be more prepared for different tasks.
+- What is these stress factors, upper side of the figure....
 
 
 :::
 
 
 
-## Icebreaker :) (10 min) {.smaller background-color="#604461"}
 
+## Icebreaker 😎 (10 min) {background-color="#604461"}
 
-- First reflection task: Physical skills and mission ready
+### First task of reflection: Physical skills and mission ready
 
+**If you had to lead a mission tomorrow, what physical skills would you most rely on?**
 
-**If you had to lead a mission tomorrow, what physical skills would you most rely on?**  
+Occupational task requirements, can you mention some occupational tasks you will frequently experience in your field
 
-Occupational task requirements, can you mention some occupational tasks you will 
-
-- Spend 6 minutes to discuss reflecting upon this question with your fellow cadet
-
-
-
-
+-   Spend 6 minutes to discuss reflecting upon this question with your fellow cadet
 
 ## Military working demands {background-color="#604461"}
 
-- What is your working demand in your field of expertise?
+-   What is your working demand in your field of expertise?
 
-    - Spend two minutes to discuss reflecting upon this question
+    -   Spend two minutes to discuss reflecting upon this question
 
-
-
-::: {.notes}
-
-
-
+::: notes
 :::
-
-
-
 
 ## Military operations and physical fitness {.smaller background-color="#604461"}
 
 ### Military readiness
 
-::: {.r-stack}
+::: r-stack
+![](fig/new_read.png){.fragment .fade-in-then-out height="350" fragment-index="1"}
 
-![](fig/new_read.png){.fragment .fade-in-then-out height="350" fragment-index=1}
+![](fig/body_dem_2.png){.fragment .fade-in-then-out height="450" fragment-index="2"}
 
-
-![](fig/body_dem_2.png){.fragment .fade-in-then-out height="450" fragment-index=2}
-  
-![](fig/train_prin.png){.fragment height="450" fragment-index=3}
-
-
+![](fig/train_prin.png){.fragment height="450" fragment-index="3"}
 :::
 
 -   Military readiness is dependent of soldiers' physical fitness
 
+::: notes
+-   A command Sergeant Major, served in Iraq at several occasions, once said that: "Everything is conditioning." Elaborating on this phrase, he also said that; "If a Soldier returns from his first major firefight and tells you that the training leading up to that combat was much harder than the actual combat; then you know you have conditioned a Soldier correctly through tough and realistic training.
+
+"If you train as you will fight, you will fight as you train."
+:::
+
+
+## Session 1: What Makes a Combat-Ready Soldier? (15 mins) {background-color="#604461"}
+
+
+![](images/3k.png){.absolute left=0 .fragment fragment-index=1}
+
+
+![](images/dig.png){.absolute right=0 .fragment fragment-index=2}
+![](images/evac.png){.absolute bottom=0 .fragment fragment-index=3}
+
+![](images/vo2w.png){.absolute bottom=0 right=0 .fragment fragment-index=4}
 
 
 ::: {.notes}
 
-- A command Sergeant Major, served in Iraq at several occasions, once said that: "Everything is conditioning." Elaborating on this phrase, he also said that; "If a Soldier returns from his first major firefight and tells you that the training leading up to that combat was much harder than the actual combat; then you know you have conditioned a Soldier correctly through tough and realistic training.
+- Image 1: pass /fail? 
 
-"If you train as you will fight, you will fight as you train."
+- Image 2/3: percentage of vo2 max/ strength?
+    - What is more important for digging performance, strength or endurance? Anyone?
+    
+    
+Is it feasible with the amount of soldiers that need to be tested?
+
+Is it directly transferable to the occupational activity?
 
 
+
+Advanced prediction models?
+
+Monitor decline in occupational performance? Less efficiency declines over the years in service?
+
+Should the correlation plot be presented inbetween?
+
+Evacuation test - one strategy to meet the woorking demand?
+
+
+"Consider implementing PES as maximal performance tests, rather than dichotomous pass/fail tests, to better understand the relationship between occupationally-relevant physical capacity and MSKI risk [Drain2019]
 :::
 
 
 
 
-## Session 1: What Makes a Combat-Ready Soldier? (15 mins) {.smaller background-color="#604461"}
+## Session 1: What Makes a Combat-Ready Soldier? (15 mins) {background-color="#604461"}
 
-
-Discussion in two-three persons;  
-
+Discussion groups of three persons;
 
 **Why fitness is more that just passing physical training tests?**
 
 
-Elaborate; *"Introduction to the idea of “functional” fitness vs. “test” fitness"*
+
+Elaborate of the *idea of “functional” fitness vs. “test” fitness"*
+
+::: notes
+
+Include an image describing this difference
+
+Unlike age and sex, physical capacity is modifiable, and increased physical capacity can decrease the relative task demands (e.g. % 1RM, % VO2max), and in turn reduce fatigue and MSKI risk [Drain 2019].
 
 
 
-::: {.notes}
-
-- Evaluation of the effects of physical training programmes on occupational task performance, should measure relative strain, such as percentage of maximal capacity, of the participants while performing the task in addition to the performance outcome. These data provide more insigth into an individuals ability to compe with occupational demands.
 
 :::
 
 
+## Session 1: What Makes a Combat-Ready Soldier? (15 mins) {background-color="#604461"}
+
+- Evaluation of the effects of physical training programmes on occupational task performance, should measure relative strain, such as percentage of maximal capacity, of the participants while performing the task in addition to the performance outcome. These data provide more insight into an individuals ability to cope with occupational demands.
+
+
+
+
+- Strength; Muscle activation - which is feasible? Put on some more measurement equipment, EMG devices? 
+
+Max muscle neural activation (isometric) - dynamic movement muscle activation.
+
+
+- Other measurements your think is relevant
+VO2max and crawling - digging (portable vo2 equipment).
+
 ## Session 2: Military work demands {.smaller background-color="#604461"}
 
-
-:::: {.columns}
-
-::: {.column width="50%"}
-
-::: {.r-stack}
-
-
-
-
+:::::::::: columns
+::::: {.column width="50%"}
+:::: r-stack
 ```{r corr str1}
 #| echo: false
 #| fig-height: 4.0 
@@ -267,9 +353,7 @@ str <- readRDS(file="./derived/corr_STR.RDS")
 
 ```
 
-
-::: { .absolute top=110 left=-40}
-
+::: {.absolute top="110" left="-40"}
 Strength capacity
 
 ```{r corr str}
@@ -289,20 +373,13 @@ str
 
 ```
 
-- Moderate to strong correlations (r > 0.4)
-
+-   Moderate to strong correlations (r \> 0.4)
 :::
-:::
-:::
+::::
+:::::
 
-
-::: {.column width="50%"}
-
-::: {.r-stack}
-
-
-
-
+:::::: {.column width="50%"}
+:::: r-stack
 ```{r corr1 end}
 #| echo: false
 #| fig-height: 4.0 
@@ -316,11 +393,7 @@ end <- readRDS(file="./derived/corr_END.RDS")
 
 ```
 
-
-
-
-::: {.absolute top=110 right=-40}
-
+::: {.absolute top="110" right="-40"}
 Endurance capacity
 
 ```{r corr end}
@@ -340,96 +413,66 @@ end
 
 ```
 
-- Moderate to strong correlations (r > 0.4)
-
+-   Moderate to strong correlations (r \> 0.4)
 :::
-:::
-
-
-::: {.absolute bottom=-50}
-
-[Data from: @RN1614;@RN730;@RN1431;@RN1618;@RN1619]
-:::
-
-:::
-
-
 ::::
 
+::: {.absolute bottom="-50"}
+[Data from: @RN1614; @RN730; @RN1431; @RN1618; @RN1619]
+:::
+::::::
+::::::::::
 
-::: {.notes}
+::: notes
+-   INTERESTINGLY, we see that several of these relationship overlaps between strength and endurance, for.example move fast, dig crawl, repeated lift, load carry...
 
-- INTERESTINGLY, we see that several of these relationship overlaps between strength and endurance, for.example move fast, dig crawl, repeated lift, load carry...
-
-- meaning the soldier is dependent of both physical capacities and they need to train both capacities to optimize military readiness!!
-
+-   meaning the soldier is dependent of both physical capacities and they need to train both capacities to optimize military readiness!!
 :::
 
 
 
 
 
-## Session 2: What Makes a Combat-Ready Soldier? (25 mins) {.smaller background-color="#604461"}
-
+## Session 2: What Makes a Combat-Ready Soldier? (25 mins) {background-color="#604461"}
 
 ### Common combat roles and physical tasks (e.g. carrying gear, movement under fire, tactical obstacles)
-
 
 Discussion;
 
 **"How does your (the cadet) daily physical training reflect these demands?"**
 
+If not in particular: How can you implement some of these working demand in your training day?
 
-If not in particular: 
-How can you implement some of these working demand in your training day?
+::: notes
 
-
-
-::: {.notes}
+- include a picture maybe?
 
 - We also know that training on capacities such as strength and endurance will improve these working demands. And maybe evenmore that training on the tasks.. That is because the relative load, percentage of max load, would be reduced, meaning it would be less demanding occupational task....
-
-
 :::
 
-
-
-
-
-
-## Session 3: Mission readiness to the Military Pentathlon (25 mins) {.smaller background-color="#604461"}
-
+## Session 3: From Mission Readiness to the Military Pentathlon (25 mins) {background-color="#604461"}
 
 {{< video https://www.youtube.com/watch?v=l0hRNblvefc&t=3s start="20" >}}
-    
-    
-   
-## Session 3: Mission readiness to the Military Pentathlon (25 mins) {.smaller background-color="#604461"}
 
+## Session 3: From Mission Readiness to the Military Pentathlon (25 mins) {background-color="#604461"}
 
+Group task:
 
-Group task: 
+-   **Explain how each one aligns with real-life soldiering skills (speed, coordination, endurance, decision-making)**
+      - Transferable to your field of speciality?
+      - In which situations can you meet these skills in your field of specialty?
+       
+      
+Cadets individual task:
 
-- **Explain how each one aligns with real-life soldiering skills (speed, coordination, endurance, decision-making)**
+-   **Which event would challenge you most and why?**
 
+Group task:
 
-
-Cadets individual task: 
-
-- **Which event would challenge you most and why?**
-
-
-Group task: 
-
-- **Design a weekly PT session that includes at least one combat skill and one pentathlon-inspired drill**
-
-
-
-
-
-
+-   **Design a weekly PT session that includes at least one combat skill and one pentathlon-inspired drill**
 
 ## Wrap-Up & Cadet Takeaways (15 mins) {.smaller background-color="#604461"}
+
 Recap key ideas:
 
 Training with purpose
@@ -440,28 +483,14 @@ Share a 1-page "Cadet Combat Conditioning Plan Template"
 
 Optional: Introduce a Squad Challenge to try pentathlon-style drills weekly
 
-
-
-
-
-
-
-
-
-
-
-
 ## Ideas to work on {.smaller background-color="#107895"}
 
+-   work demand - dig, crawl ect. and do we have valid tests which is associated with this working demand?
 
-- work demand - dig, crawl ect. and do we have valid tests which is associated with this working demand?  
+-   Capacity analysis (are you on point?)\
 
-- capacity analysis (are you on point?)  
-- General demand  
+-   General demand
 
-- challenges of systematic training over time in a military context?
-
-
+-   Challenges of performing systematic training over time in a military context?
 
 # References {background-color="#604461"}
-  
