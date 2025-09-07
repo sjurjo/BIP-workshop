@@ -19,9 +19,20 @@ format: html
 
 
 
+## Icebreaker
+
+
+- Physical
+
+- Mental skills
+
+- Leadership skills
 
 
 
+
+
+Occupational task requirements: references to last time
 
 
 
@@ -40,8 +51,9 @@ format: html
 
 - Evaluation
 
-1. Compare to teacher oriented lectures and training session, is your teaching outcome enhanced with the cadet led lectures with focus on discussions and reflections upon the material?
+1. Compared to teacher oriented lectures and training session, is your learning outcome enhanced with the cadet led lectures with focus on discussions and reflections upon the material?
 
-2. Did you get relevant knowledge/theory background introduced by the digital learning platform? Please, describe with 3-4 sentences your impression by this platform?
+2. Did you get relevant knowledge/theory background introduced by the digital learning platform? 
+Please, describe with 3-4 sentences your impression by this platform?
 
-3. 
+3. The lectures were split into two more classic lectures (teacher led lectures) and two seminar/workshops (cadet activating lectures). The pedagogical rationale is that by activating you in the lectures/workout sessions it would engage and motivate you to take more part in your own learning process and hopefully enhance your learning outcome. How did you experience this learning approach? Please add 2-3 sentences and 2 key words describing your opinion for this learning strategy.
