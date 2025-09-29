@@ -11,7 +11,7 @@ author:
     orcid: 0000-0000-0000-0000
     email: Norwegian Defence Cyber Academy
     affiliations: sofsteng@mil.no
-date: September 23, 2025
+date: September 24, 2025
 #standalone: true
 self-contained: true
 bibliography: bib/bib-lecture.bib
@@ -68,7 +68,7 @@ what - how - why?
 
 ## Meeting your military work demands {.smaller background-color="#604461"}
 
-### Aquired knowledge following the workshop
+### Todays topics for discussion
 
 **What** are your working demands in your position?
 
@@ -114,9 +114,9 @@ First let us take a brief recap of what I talked about last lecture about workin
 
 2. The next progression step, is to get you as soldier deployment ready / mission ready... Here you will additionally focus your training more on your occupational demands that you will meet when you deploy... called pre-deployment preparation...
 
-3. Then when you are assumed deployment ready are your performance level is high..
+3. Then when you are assumed deployment ready your performance level is high and your have optimized your military readiness..
 
-4- Then during your deployment you will experioence these drop in performance level, due to the stress factors we talked about last lecture... show next slide and explain..
+4- Then during your deployment you will experience these drop in performance level, due to the stress factors we talked about last lecture... show next slide and explain..
 
 5. then to re-establish performance you return to the preparation phase and so you move along your carrer.
 
@@ -141,7 +141,7 @@ First let us take a brief recap of what I talked about last lecture about workin
 
 
 
-## Changes following field exercises/ranger training, operations/deployment {background-color="#604461" footer="false"}
+## Changes following field exercises and operations/deployment {background-color="#604461" footer="false"}
 
 ::: {.r-stack}
 
@@ -207,7 +207,7 @@ tab +
 
 - Explain figure.. 
 
-- There is a variations in changes between the studies, due to differences in duration, energy deficit, recovery, sampling time points.. So both physiological changes but also methodological differences (that must be kept when comparing studies, such as this plot)..
+- There is a variations in changes between the studies, due to differences in duration, energy deficit, recovery, sampling time points.. So both physiological changes but also methodological differences (that must be kept in mind when comparing such studies, such as this plot)..
 
 :::
 
@@ -243,10 +243,10 @@ However, employment progression, together with your experience and knowledge you
 
 ::: notes
 
-You through education, as participating here, you will more and more experience how these stress factors affects your body changes and performance level, you may, hopefully develop your own strategies suited for you to optimizing your development of performance and hence military readiness..
+..THROUGH education, as participating here, you will more and more experience how these stress factors affects your changes in body composition and performance level. AND, you may, hopefully by this increased knowledge and skills develop your own strategies suited for you body to optimizing your development in military performance and hence operational readiness..
 
 
-- "click" and hence more likely manage to sustain physical fitness over time, reduce the drop in fitness during more intens periods/operations and thereby optimizing your operational readiness...
+- "click" and hence more likely manage to sustain physical fitness over time, to reduce/ or deley the the drop in fitness during more intense periods/operations and thereby optimizing your operational readiness...
 
 ----
 
@@ -285,34 +285,33 @@ CONCLUSION her or at the end...:
 
 
 
-## Icebreaker 😎 (15-20 min) {background-color="#604461"}
+## Icebreaker 😎 (15 min) {background-color="#604461"}
 
-### First task of reflection: Physical skills and deployment/mission ready
+### First task of reflection: Physical skills and mission ready
 
-**- If you had to lead a mission tomorrow, what physical skills/capacities would you most rely on ?**
+**- If you had to lead a mission tomorrow, what physical skills/capacities would you most rely on?**
 
 
 ![](images/deploy.png)
 
 ::: {.notes}
-:::{.fragment}
-"remove";
-Occupational task requirements, can you mention some occupational tasks you will frequently experience in your field
 
--   Spend 6 minutes to discuss reflecting upon this question with your fellow cadet
+- here I can present the triangle with physical capacities, more capacities, speed, power, coordination, agility, then occupational tasks, then combat ready?..
 
-:::
+or wait to the next section....
 
 :::
 
-## Military working demands {background-color="#604461"}
+
+## Military working demands continues {background-color="#604461"}
 
 - **If you think about your own field of expertise, which work-related demand do you consider the most important or most influential, and why?**
-     
+<br>
+<br>
      - What makes it stand out compared to other demands?  
      - Which factors are shaping this working demand (technology, environment, speciality, region, country specific etc.)?  
 
-
+ 
 
 
 ::: {.notes}
@@ -333,32 +332,34 @@ Working demands; can be physical capacitites, or specific tasks ect.
 
 
 
-## Military operations and physical fitness {.smaller background-color="#604461"}
+## Military operations and physical fitness {.smaller background-color="#604461" visibility="hidden"}
 
 ### Military readiness
 
 ::: r-stack
-![](fig/new_read.png){.fragment .fade-in-then-out height="350" fragment-index="1"}
-
-![](fig/body_dem_2.png){.fragment .fade-in-then-out height="450" fragment-index="2"}
 
 ![](fig/train_prin.png){.fragment height="450" fragment-index="3"}
+
+
+![](images/takehome.png){.absolute height=350 right=-30 top=50 .fragment fragment-index="4"}
+
 :::
 
 -   Military readiness is dependent of soldiers' physical fitness
 
 ::: notes
+- from slide relate it to training principles
 
-- 
 
--   A command Sergeant Major, served in Iraq at several occasions, once said that: "Everything is conditioning." Elaborating on this phrase, he also said that; "If a Soldier returns from his first major firefight and tells you that the training leading up to that combat was much harder than the actual combat; then you know you have conditioned a Soldier correctly through tough and realistic training.
+![](fig/new_read.png){.fragment .fade-in-then-out height="350" fragment-index="1"}
 
-"If you train as you will fight, you will fight as you train."
+![](fig/body_dem_2.png){.fragment .fade-in-then-out height="450" fragment-index="2"}
+
 :::
 
 
 
-## Military work demands {.smaller background-color="#604461"}
+## Military work demands {.smaller background-color="#604461" visibility="hidden"}
 
 :::: columns
 
@@ -462,7 +463,7 @@ end
 
 
 
-## Military work demands {.smaller background-color="#604461"}
+## Military work demands {.smaller background-color="#604461" visibility="hidden"}
 
 :::: columns
 ::: {.column width="50%"}
@@ -563,7 +564,7 @@ A person tests his maximal strength or oxygen consumption, it get a value and a 
 
 
 
-## What Makes a Combat-Ready Soldier? (25 mins) {background-color="#604461"}
+## What Makes a Combat-Ready Soldier? (20 mins) {background-color="#604461"}
 
 ### Common combat roles and physical tasks (e.g. carrying gear, movement under fire, tactical obstacles)
 
@@ -574,7 +575,7 @@ Discussion;
 If not in particular: How can you implement some of these working demand in your training day?
 
 
-*Coping with the demands*(fragment)
+*Coping with the demands*
 
 - What strategies help you handle this demand effectively?
 
@@ -583,13 +584,49 @@ If not in particular: How can you implement some of these working demand in your
 
 ::: notes
 
-- include a picture maybe?
-
 - what comes first - capacitites or specific training?
 
-
+- Should include the TRIANGLE here?
 
 - We also know that training on capacities such as strength and endurance will improve these working demands. And maybe evenmore that training on the tasks.. That is because the relative load, percentage of max load, would be reduced, meaning it would be less demanding occupational task....
+:::
+
+
+## What Makes a Combat-Ready Soldier? (20 mins) {.smaller background-color="#604461"}
+
+[**To prepare for the demands of military duty and military pentathlon, we need to train smart – not just a lot and hard**]{.fg style="--col: pink"}
+
+:::: {.columns}
+
+::: {.column width="60%" .absolute left=0}
+
+
+Five core training principles can guide this process:  
+
+1.\ Load and adaptation – how the body responds to stress  
+2.\ Variation – to prevent stagnation and overload  
+3.\ Progression – to ensure continuous improvement  
+4.\ Specificity – to match training with performance demands  
+5.\ **Monitoring and control – to adjust and individualize the plan**
+
+
+
+:::
+
+::: {.column width="40%"}
+
+![](images/takehome.png){.absolute height=350 right=-20}
+
+:::
+::::
+
+
+::: {.notes}
+
+
+
+
+
 :::
 
 
@@ -610,6 +647,30 @@ If not in particular: How can you implement some of these working demand in your
 
 
 ::: {.notes}
+
+
+- We have assessment to measure your physical fitness, annual test scores. 
+- Its an pass / fail assesment according to a test score /threshold...
+
+- If you are getting stronger or improve your runing time, you are graded higher, usually.
+    - This is something we assume, right...
+
+- BUT is this telling us something about your occupational task performance, in for.example digging, evacuation..
+
+- Can we predict your performance from these pass /fail test? 
+
+
+Or should we, measure your actual performance in digging / evacuation.
+
+- For.example or is our relative strain more important to know? What is this actually costing us to conduct?
+
+
+Or can two persons with different strength have the opportuninty to perform at the same level in digging? 
+    - Technical aspect, work economy - more efficient working?
+
+
+-----
+
 
 - Image 1: pass /fail? 
 
@@ -636,23 +697,32 @@ Is it directly transferable to the occupational activity?
 :::
 
 
+## What Makes a Combat-Ready Soldier? {background-color="#604461"}
+
+Discussion groups;
+
+**Which fitness tests do you have in your academy?**  
+
+
+**Do we have different tests between countries?**
 
 
 
-## What Makes a Combat-Ready Soldier? (15 mins) {background-color="#604461"}
 
-Discussion groups of three persons;
+## What Makes a Combat-Ready Soldier? {background-color="#604461"}
+
+Discussion groups;
 
 **Why fitness is more that just passing physical training tests?**
 
 
-Elaborate of the *idea of “test” fitness* vs. *“functional” fitness*
+Elaborate of the *idea of “test” fitness* vs. *“functional” fitness*  
+  - Can we predict your functional fitness?  
 
-
+  
 ::: {.fragment}
 
-Can you share an experience from your school days or work where the standard physical fitness test did not prepare you for or reflect the actual challenges you encountered?
-
+Can you share an experience from your school days/work where the standard physical fitness test did not prepare you for or reflect the actual challenges you encountered?
 
 How would your training look different if your goal was real-world performance instead of just test performance?
 
@@ -660,16 +730,14 @@ How would your training look different if your goal was real-world performance i
 
 ::: notes
 
-Include an image describing this difference
+Marching, loaded run, repetitive lifting of ammo-boxes, loading ammo?
 
 Unlike age and sex, physical capacity is modifiable, and increased physical capacity can decrease the relative task demands (e.g. % 1RM, % VO2max), and in turn reduce fatigue and MSKI risk [Drain 2019].
 
 
-
-
 :::
 
-## What Makes a Combat-Ready Soldier? (15 mins) {background-color="#604461"}
+## What Makes a Combat-Ready Soldier? {background-color="#604461" visibility="hidden"}
 
 :::: columns
 ::: {.column width="50%"}
@@ -728,18 +796,19 @@ end
 ::::
 
 
-## We go out to test the association in real life {background-color="#604461"}
+## We go out to test the association in real life {background-color="#604461" visibility="hidden"}
 
 
-- Fitness test: push- ups for 1 min, shuttle run gravel pitch....
+- **Fitness test:** push- ups for 1 min, shuttle run gravel pitch....
 
 
-- Functional test: Causalty evacuation
+- **Functional test:** Casualty evacuation
 
 
 ::: {.fragment}
 - What is your experience? 
-    - Can a strength and endurance test predict your causalty drag performance? 
+    - Can a strength and endurance test predict your casualty drag performance? 
+    - Group vs. individual level?
 
 
 :::
@@ -750,6 +819,9 @@ end
 
 - better fit better functional test correlation? 
 
+- is it other factors affecting your causalty performance...
+
+
 Remember to video tape the finish line whether peaople are performing equal or not
 
 
@@ -757,6 +829,30 @@ Remember to video tape the finish line whether peaople are performing equal or n
 
 
 :::
+
+
+
+## What Makes a Combat-Ready Soldier? (15 mins) {background-color="#604461"}
+
+### What is the association telling us?
+
+
+Predicting your Field Artillery Loading Task by a maximal strength test [@nato_2019]  
+
+- $R^{2}$ = 0.57
+
+- 57 % of the variation in Field Artillery Loading Performance is explained by isometric pull strength
+
+
+::: {.notes}
+
+
+greater isometric strength you will take more rounds in field artillery loading task...
+
+:::
+
+
+
 
 
 
@@ -781,6 +877,7 @@ Remember to video tape the finish line whether peaople are performing equal or n
 ::: {.notes}
 
 - Put it in here or move it beyond the next slid..
+
 
 
 - Correlation plots does not give any information of a necessary threshold for successful military task performance
@@ -816,7 +913,7 @@ Remember to video tape the finish line whether peaople are performing equal or n
 
 **Functional fitness**  
 
-- Focus: Real-world readiness, unpredictable demands  
+- Focus: Real-world readiness, occupational task demands  
 
 - Approach: Train movement patterns (i.e. lift, carry, crawl, sprint)  
 - Outcome: Broad performance and injury resilience  
@@ -843,7 +940,7 @@ We need both to se progression...
 
 - Valid predictions?
 
-- To assess an individuals ability to cope with occupational demands
+- To assess an individuals ability to cope with **occupational demands**
 
 
 ::: {.fragment}
@@ -869,9 +966,7 @@ VO2max and crawling - digging (portable vo2 equipment).
 ## Take aways working demands and tests {.smaller background-color="#604461"}
 
 
-Key Takeaway (5 min)
-
-Facilitator emphasizes:  
+Key Takeaway:  
 
 - Test fitness = meeting a standard (pass/fail based on a score).  
 
@@ -879,18 +974,17 @@ Facilitator emphasizes:
   - Military pentathlon exercises, could some of these exercises be implemented in a test battery to test occupational demands? 
 
 
-- Best approach: Train to exceed test standards while building functional fitness (specificity), and resilience for real-world performance.  
+- Best approach: Train to exceed test standards while building functional fitness (specificity), and resilience for real-world battlefield performance.  
 
 
 
-Possible solution: 
+Possible solution/suggestion: 
 
 - Make your own test batteries for relevant occupational task?
-  - Then you, at least, can monitor and control your progression in relevant occupational tasks that you will meet at the battlefield.
-  - Control of the relative strain in that task - training progression?
+  - **Then you**, at least, can monitor and control your progression in relevant occupational tasks that you will meet on the battlefield.
+  - Control of training progression?
   - Feasible?
   - Motivational?
-
 
 
 ::: {.notes}
@@ -901,34 +995,42 @@ Possible solution:
 
 
 
-## Session 3: From Mission Readiness to the Military Pentathlon (25 mins) {background-color="#604461"}
+## Session 3: From Mission Readiness to the Military Pentathlon {background-color="#604461"}
 
 {{< video https://www.youtube.com/watch?v=l0hRNblvefc&t=3s start="20" >}}
 
-## Session 3: From Mission Readiness to the Military Pentathlon (25 mins) {background-color="#604461"}
+## Session 3: From Mission Readiness to the Military Pentathlon {background-color="#604461"}
 
 Group task:
 
--   **Explain how each one aligns with real-life soldiering skills (speed, coordination, endurance, decision-making)**
+-   **Explain how each one aligns with real-life soldiering skills**
       - Transferable to your field of speciality?
-      - In which situations can you meet these skills in your field of specialty?
+      - In which situations can you meet these skills in your field of speciality?
        
   
+::: {.,notes}
+
+- (speed, coordination, endurance, decision-making, concentration, agility, aerob, strength, muscle endurance
+
+
+:::
   
-## Session 3: From Mission Readiness to the Military Pentathlon (25 mins) {background-color="#604461"}
+  
+## Session 3: From Mission Readiness to the Military Pentathlon {background-color="#604461"}
       
 Cadets individual task:
 
 -   **Which event would challenge you most and why?**
 
+::: {.fragment}
+
 Group task:
 
 -   **Design a weekly PT session that includes at least one combat skill and one pentathlon-inspired drill**
 
+:::
 
-## Wrap-Up & Cadet Takeaways (15 mins) {.smaller background-color="#604461"}
-
-Recap key ideas:
+## Wrap-Up & Cadet Takeaways {.smaller background-color="#604461"}
 
 Training with purpose
 
@@ -954,6 +1056,7 @@ Optional: Introduce a Squad Challenge to try pentathlon-style drills weekly
 
 
 :::
+
 
 ## Ideas to work on {.smaller background-color="#107895" visibility="hidden"}
 
